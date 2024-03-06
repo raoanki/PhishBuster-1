@@ -1,0 +1,52 @@
+<!-- popup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Detector</title>
+    <style>
+        body {
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            background-color: beige;
+        }
+
+        #result {
+            color: blue;
+            font-size: large;
+            font-weight: bold;
+    
+            animation: change-color 6s infinite;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform:  translate(-50%,50%);
+            background: transparent;
+            height: 40px;
+            width: 300px;
+            border-radius: 80px;
+            padding: 10px;
+        }
+       
+        /* Define the @keyframes rule */
+        @keyframes change-color {
+            0% {
+                color: rgb(255, 51, 51);
+            }
+            50% {
+                color: rgb(255, 93, 93);
+            }
+            100% {
+                color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h3>Phishing Detector</h3>
+    <div id="result"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
