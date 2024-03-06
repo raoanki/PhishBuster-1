@@ -5,7 +5,7 @@ import joblib
 app = Flask(__name__)
 
 # Load the machine learning model using joblib
-phish_model_ls = joblib.load("/home/rakessh/Documents/new testing model/templates1/phishing1.pkl")
+phish_model_ls = joblib.load("phishing1.pkl")
 
 @app.route("/")
 def home():
